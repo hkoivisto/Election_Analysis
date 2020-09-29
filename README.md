@@ -1,6 +1,6 @@
 # Election_analysis
 
-## proh=ject Overview
+## project Overview
 AColorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the toatal number of votes cast.
