@@ -29,7 +29,7 @@ AColorado Board of Elections employee has given you the following tasks to compl
   - The winner of the election was:
     - Diana DeGette, who received 73.8% of the vote and 272,892 votes.
     
-  ![Election_summary]
+  ![Election_summary](https://github.com/hkoivisto/Election_Analysis/blob/master/Resources/Election_Summary.png)
     
   ## Election Audit Summary
   This audit script is designed so that any csv file of election results can be processed. 
