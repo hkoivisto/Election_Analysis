@@ -1,6 +1,6 @@
 # Election_analysis
 
-## project Overview
+## Project Overview
 AColorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the toatal number of votes cast.
@@ -13,22 +13,48 @@ AColorado Board of Elections employee has given you the following tasks to compl
  - Data Source: election_results.csv
  - Software: Python 3.7.6, Visual Studio Code, 1.38.1 
  
- ## Summary
+ ## Election Audit Results
  The analysis of the election show that:
   - There were 369,711 votes cast in the election.
-  - The candidates were: 
-    - Charles Casper Stockham
-    - Diana DeGette
-    - Raymon Anthony Doane
+  - The county results were:
+    - Jefferson County represented 10.5% of the toal vote with 38,855 votes.
+    - Denver County represented 82.8% of the total vote with 306,055 votes.
+    - Arapahoe County represented 6.7% of the total vote with 24,801 votes.
+  - The county withthe most votes was:
+    - Denver County, with 82.8% of the total vote and 306,055 votes.
   - The candidate results were:
     - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes.
     - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
   - The winner of the election was:
-    - Diana DeGEtte, who received 73.8% of the vote and 272, 892 votes.
+    - Diana DeGEtte, who received 73.8% of the vote and 272,892 votes.
     
-  ## Challenge Overview
-  
-  ## Challenge Summary
+  ## Election Audit Summary
+  This audit script is designed so that any csv file of election results can be processed. 
+  Minor modifications that could be needed for additioanl types of elections include:
+   - If the election district differ from 'counties' as seenin this analysis, the hardcoded output verbage can be changed to match whichever type of district is represented.
+   - If the election winner is required to reach a threshold percentage of votes, rather than just simple majority, a condition can be added to reflect this.
+    - This modification could achieved as such:
+    
+    ...
+    if (votes > winning_count) and (vote_percentage > winning_percentage):
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+    ...
+    
+   Modified to:
+   
+   ...
+   if (votes > winning_count) and (vote_percentage > winning_percentage) and vote_percentage > 50:
+            winning_count = votes
+            winning_candidate = candidate_name
+            winning_percentage = vote_percentage
+   else:
+            winning_candidate = "No winner determined. No candidate recieved the threshhold percentage."
+   ...
+   
+   
+    
 
   
