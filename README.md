@@ -1,7 +1,7 @@
-# Election_analysis
+# Election_Analysis
 
 ## Project Overview
-AColorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
+A Colorado Board of Elections employee has given you the following tasks to complete the election audit of a recent local congressional election.
 
 1. Calculate the toatal number of votes cast.
 2. Get a complete list of candidates who received votes.
@@ -14,29 +14,29 @@ AColorado Board of Elections employee has given you the following tasks to compl
  - Software: Python 3.7.6, Visual Studio Code, 1.38.1 
  
  ## Election Audit Results
- The analysis of the election show that:
+ The analysis of the election shows that:
   - There were 369,711 votes cast in the election.
   - The county results were:
     - Jefferson County represented 10.5% of the toal vote with 38,855 votes.
     - Denver County represented 82.8% of the total vote with 306,055 votes.
     - Arapahoe County represented 6.7% of the total vote with 24,801 votes.
-  - The county withthe most votes was:
+  - The county with the most votes was:
     - Denver County, with 82.8% of the total vote and 306,055 votes.
   - The candidate results were:
-    - Charles Casper Stockham received 23.0% of the vote and 85,213 number of votes.
-    - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
-    - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
+    - Charles Casper Stockham received 23.0% of the vote and 85,213 votes.
+    - Diana DeGette received 73.8% of the vote and 272,892 votes.
+    - Raymon Anthony Doane received 3.1% of the vote and 11,606 votes.
   - The winner of the election was:
     - Diana DeGette, who received 73.8% of the vote and 272,892 votes.
     
   ![Election_summary](https://github.com/hkoivisto/Election_Analysis/blob/master/Resources/Election_Summary.png)
     
   ## Election Audit Summary
-  This audit script is designed so that any csv file of election results can be processed. 
+  This audit script is designed so that any election results stored as a csv can be processed. 
   Minor modifications that could be needed for additioanl types of elections include:
-   - If the election district differ from 'counties' as seenin this analysis, the hardcoded output verbage can be changed to match whichever type of district is represented.
+   - If the election districts differ from 'counties' as seen in this analysis, the hardcoded output verbage can be changed to match whichever type of district is represented.
    - If the election winner is required to reach a threshold percentage of votes, rather than just simple majority, a condition can be added to reflect this.
-    - This modification could achieved as such:
+    - This modification could be achieved as such:
     
     ...
     if (votes > winning_count) and (vote_percentage > winning_percentage):
