@@ -33,10 +33,10 @@ A Colorado Board of Elections employee has given you the following tasks to comp
     
   ## Election Audit Summary
   This audit script is designed so that any election results stored as a csv can be processed. 
-  Minor modifications that could be needed for additioanl types of elections include:
+  Minor modifications that could be needed for additional types of elections include:
    - If the election districts differ from 'counties' as seen in this analysis, the hardcoded output verbage can be changed to match whichever type of district is represented.
    - If the election winner is required to reach a threshold percentage of votes, rather than just simple majority, a condition can be added to reflect this.
-    - This modification could be achieved as such:
+     - This modification could be achieved as such:
     
     ...
     if (votes > winning_count) and (vote_percentage > winning_percentage):
