@@ -27,7 +27,9 @@ AColorado Board of Elections employee has given you the following tasks to compl
     - Diana DeGette received 73.8% of the vote and 272,892 number of votes.
     - Raymon Anthony Doane received 3.1% of the vote and 11,606 number of votes.
   - The winner of the election was:
-    - Diana DeGEtte, who received 73.8% of the vote and 272,892 votes.
+    - Diana DeGette, who received 73.8% of the vote and 272,892 votes.
+    
+  ![Election_summary]
     
   ## Election Audit Summary
   This audit script is designed so that any csv file of election results can be processed. 
@@ -45,14 +47,14 @@ AColorado Board of Elections employee has given you the following tasks to compl
     
    Modified to:
    
-   ...
-   if (votes > winning_count) and (vote_percentage > winning_percentage) and vote_percentage > 50:
+    ...
+    if (votes > winning_count) and (vote_percentage > winning_percentage) and vote_percentage > 50:
             winning_count = votes
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
-   else:
+    else:
             winning_candidate = "No winner determined. No candidate recieved the threshhold percentage."
-   ...
+    ...
    
    
     
